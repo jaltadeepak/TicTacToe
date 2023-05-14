@@ -53,8 +53,9 @@ nav ul{
     padding: 0 34px;
 }
 
-.imgbox{
-    display: none;
+.imgbox img{
+    width: 0px;
+    transition: width is ease-in-out;
 }
 
 .br-0{
