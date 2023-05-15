@@ -18,7 +18,7 @@ const checkWin = ()=>{
         [1, 4, 7],
         [2, 5, 8],
         [0, 4, 8],
-        [2, 5, 7],
+        [2, 4, 6],
     ]
     wins.forEach(e =>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[1]].innerText === boxtext[e[2]].innerText) && (boxtext[e[2]].innerText !== "")){
@@ -43,4 +43,15 @@ Array.from(boxes).forEach(element =>{
             }
         }
     })
+})
+
+reset.addEventListener('click', ()=>{
+    let boxtexts = document.querySelectorAll('.boxtext');
+    Array.from(boxtexts).forEach(element => {
+        element.innerText=""
+    });
+    turn = "X";
+    isGameOver = false;
+    document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
