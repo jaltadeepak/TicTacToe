@@ -102,9 +102,16 @@ h3{
     .gameContainer{
         flex-wrap: wrap;
     }
+    .container{
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: repeat(3, 22vw);
+    }
+    .gameextra{
+        margin-top: 20px;
+    }
     .imgbox{
         display: flex;
-        justify-content: center;
+        justify-content: center;    
     }
 }
 
