@@ -26,13 +26,12 @@ nav ul{
     /* align-items: center; */
     justify-content: center;
     padding: 20px 0px;
-    flex-wrap: wrap;
 }
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
-    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 14vw);
+    grid-template-rows: repeat(3, 14vw);
     font-family: 'Roboto', sans-serif;
     
 }
@@ -73,6 +72,7 @@ nav ul{
 
 h3{
     margin: 10px 0px;
+    font-size: 1.3rem;
 }
 
 .info{
@@ -87,3 +87,12 @@ h3{
     font-weight: bolder;
 }
 
+@media screen and (max-width: 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .imgbox{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -24,7 +24,7 @@ const checkWin = ()=>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[1]].innerText === boxtext[e[2]].innerText) && (boxtext[e[2]].innerText !== "")){
             document.querySelector('.info').innerText = boxtext[e[2]].innerText + " wins"
             isGameOver = true
-            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "156px"
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px"
         }
     })
 }
